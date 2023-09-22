@@ -20,7 +20,30 @@ let log = console.log;
 
 ////////////////////////////////// unit 3 //////////////////////////////
 
+// function factorialize(num) {
+//   if (num <= 0) {
+//     return 1;
+//   }
+//   return num * factorialize(num - 1);
+// }
+
+// log(factorialize(10));
+
 ////////////////////////////////// unit 4 //////////////////////////////
+
+// function findLongestWordLength(str) {
+//   let ar = str.split(' ');
+//   let num = ar[0].length;
+//   let result = ar.map((el) => {
+//     if (el.length > num) {
+//       num = el.length;
+//       log(el)
+//     }
+//   })
+//   return num;
+// }
+
+// log(findLongestWordLength("The quick brown fox jumped over the lazy dog"));
 
 ////////////////////////////////// unit 5 //////////////////////////////
 
