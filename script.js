@@ -47,7 +47,31 @@ let log = console.log;
 
 ////////////////////////////////// unit 5 //////////////////////////////
 
+// function largestOfFour(arr) {
+//   let result = arr.map((el) => {
+//     let temp = [];
+//     temp = el.sort(function (a, b) {
+//       return a - b;
+//     });
+//     return temp[el.length - 1];
+//   })
+//   return result;
+// }
+
+// log(largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]));
+
 ////////////////////////////////// unit 6 //////////////////////////////
+
+// function confirmEnding(str, target) {
+//   let ar = str.split('');
+//   let leng = target.length;
+//   if (str.slice((str.length) - leng) == target) {
+//     return true
+//   }
+//   return false;
+// }
+
+// log(confirmEnding("Bastian", "n"));
 
 ////////////////////////////////// unit 7 //////////////////////////////
 
