@@ -87,6 +87,20 @@ let log = console.log;
 
 ////////////////////////////////// unit 8 //////////////////////////////
 
+function truncateString(str, num) {
+  let out = '';
+  for (let i = 0; i < str.length; i++) {
+    out += str[i];
+
+    if (i > num - 1) {
+      out += '...';
+      break;
+    }
+  }
+  return out;
+}
+log(truncateString("A-tisket a-tasket A green and yellow basket", 8));
+
 ////////////////////////////////// unit 9 //////////////////////////////
 
 ////////////////////////////////// unit 10 //////////////////////////////
