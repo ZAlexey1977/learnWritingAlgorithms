@@ -87,34 +87,64 @@ let log = console.log;
 
 ////////////////////////////////// unit 8 //////////////////////////////
 
-function truncateString(str, num) {
-  let ar = str.split('');
-  let out = '';
-  log(ar);
-  for (let i = 0; i < ar.length; i++) {
-    out += ar[i];
-    if (ar[i] == ' ') {
-      continue;
-    }
+// function truncateString(str, num) {
+//   let ar = str.split('');
+//   let out = '';
+//   log(ar);
+//   for (let i = 0; i < ar.length; i++) {
+//     out += ar[i];
+//     if (ar[i] == ' ') {
+//       continue;
+//     }
 
-    if (num == str.length) {
-      out = str;
-      break;
-    }
+//     if (num == str.length) {
+//       out = str;
+//       break;
+//     }
 
-    if (i >= num - 1) {
-      out += '...';
-      break;
-    }
+//     if (i >= num - 1) {
+//       out += '...';
+//       break;
+//     }
 
-  }
-  return out;
-}
-log(truncateString("A-tisket a-tasket A green and yellow basket", "A-tisket a-tasket A green and yellow basket".length));
+//   }
+//   return out;
+// }
+// log(truncateString("A-tisket a-tasket A green and yellow basket", "A-tisket a-tasket A green and yellow basket".length));
 
 ////////////////////////////////// unit 9 //////////////////////////////
 
+// function booWho(bool) {
+//   if(bool === true || bool === false){
+// return true;
+//   }
+//   return false;
+// }
+
+// booWho(null);
+
 ////////////////////////////////// unit 10 //////////////////////////////
+
+function titleCase(str) {
+  let ar = str.split(' ');
+  let out;
+  let result;
+  let temp = ar.map((el) => {
+    out = el.split().toString();
+
+    for (let i = 0; i < out.length; i++) {
+      result += out[i];
+      if (i == 0) {
+        out[i].toUpperCase();
+      }
+    }
+
+  })
+  return result;
+
+}
+
+log(titleCase("I'm a little tea pot"));
 
 ////////////////////////////////// unit 11 //////////////////////////////
 
