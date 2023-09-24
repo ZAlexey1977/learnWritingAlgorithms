@@ -125,26 +125,26 @@ let log = console.log;
 
 ////////////////////////////////// unit 10 //////////////////////////////
 
-function titleCase(str) {
-  let ar = str.split(' ');
-  let out;
-  let result;
-  let temp = ar.map((el) => {
-    out = el.split().toString();
+// function titleCase(str) {
+//   let ar = str.split(' ');
+//   let out;
+//   let result;
+//   let temp = ar.map((el) => {
+//     out = el.split().toString();
 
-    for (let i = 0; i < out.length; i++) {
-      result += out[i];
-      if (i == 0) {
-        out[i].toUpperCase();
-      }
-    }
+//     for (let i = 0; i < out.length; i++) {
+//       result += out[i];
+//       if (i == 0) {
+//         out[i].toUpperCase();
+//       }
+//     }
 
-  })
-  return result;
+//   })
+//   return result;
 
-}
+// }
 
-log(titleCase("I'm a little tea pot"));
+// log(titleCase("I'm a little tea pot"));
 
 ////////////////////////////////// unit 11 //////////////////////////////
 
@@ -166,3 +166,68 @@ log(titleCase("I'm a little tea pot"));
 
 ////////////////////////////////// unit 1 //////////////////////////////
 
+
+// function titleCase(str) {
+//   let ar = str.split(' ');
+//   let out;
+//   let result;
+//   let temp = ar.map((el) => {
+//     out = el.split().toString();
+
+//     for (let i = 0; i < out.length; i++) {
+//       result += out[i];
+//       if (i == 0) {
+//         out[i].toUpperCase();
+//       }
+//     }
+
+//   })
+//   return result;
+
+// }
+
+// log(titleCase("I'm a little tea pot"));
+
+
+// function titleCase(str) {
+//   let ar = str.split(' ');
+//   let out;
+//   let result;
+//   let temp = ar.map((el) => {
+//     out = el.split().toString();
+
+//     for (let i = 0; i < out.length; i++) {
+//       result += out[i];
+//       if (i == 0) {
+//         out[i].toUpperCase();
+//       }
+//     }
+
+//   })
+//   return result;
+
+// }
+
+// log(titleCase("I'm a little tea pot"));
+
+
+// function titleCase(str) {
+//   let ar = str.split(' ');
+//   let out;
+//   let result;
+//   let temp = ar.map((el) => {
+//     out = el.split().toString();
+
+//     for (let i = 0; i < out.length; i++) {
+//       result += out[i];
+//       if (i == 0) {
+//         out[i].toUpperCase();
+//       }
+//     }
+
+//   })
+//   return result;
+
+// }
+
+// log(titleCase("I'm a little tea pot"));
