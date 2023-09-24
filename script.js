@@ -88,18 +88,29 @@ let log = console.log;
 ////////////////////////////////// unit 8 //////////////////////////////
 
 function truncateString(str, num) {
+  let ar = str.split('');
   let out = '';
-  for (let i = 0; i < str.length; i++) {
-    out += str[i];
+  log(ar);
+  for (let i = 0; i < ar.length; i++) {
+    out += ar[i];
+    if (ar[i] == ' ') {
+      continue;
+    }
 
-    if (i > num - 1) {
+    if (num == str.length) {
+      out = str;
+      break;
+    }
+
+    if (i >= num - 1) {
       out += '...';
       break;
     }
+
   }
   return out;
 }
-log(truncateString("A-tisket a-tasket A green and yellow basket", 8));
+log(truncateString("A-tisket a-tasket A green and yellow basket", "A-tisket a-tasket A green and yellow basket".length));
 
 ////////////////////////////////// unit 9 //////////////////////////////
 
