@@ -160,19 +160,28 @@ let log = console.log;
 
 ////////////////////////////////// unit 13 //////////////////////////////
 
-function bouncer(arr) {
-  const filteredArr = [];
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i]) {
-      filteredArr.push(arr[i]);
-    };
-  }
-  return filteredArr;
-}
+// function bouncer(arr) {
+//   const filteredArr = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i]) {
+//       filteredArr.push(arr[i]);
+//     };
+//   }
+//   return filteredArr;
+// }
 
-log(bouncer([null, NaN, 1, 2, undefined]));
+// log(bouncer([null, NaN, 1, 2, undefined]));
 
 ////////////////////////////////// unit 14 //////////////////////////////
+
+// function getIndexToIns(arr, num) {
+//   return arr
+//     .concat(num)
+//     .sort((a, b) => a - b)
+//     .indexOf(num);
+// }
+
+// log(getIndexToIns([10, 20, 30, 40, 50], 30));
 
 ////////////////////////////////// unit 15 //////////////////////////////
 
