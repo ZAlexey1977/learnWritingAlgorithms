@@ -185,6 +185,26 @@ let log = console.log;
 
 ////////////////////////////////// unit 15 //////////////////////////////
 
+function mutation(arr) {
+  let string = arr[0].toLowerCase();
+  let str = arr[1].toLowerCase();
+  let test = str.split('');
+  let count = 0;
+  for (let i = 0; i < test.length; i++) {
+    if (string.includes(test[i])) {
+      count++;
+    }
+  }
+
+  if (count == test.length) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+log(mutation(["hello", "hey"]));
+
 ////////////////////////////////// unit 16 //////////////////////////////
 
 ////////////////////////////////// unit 1 //////////////////////////////
