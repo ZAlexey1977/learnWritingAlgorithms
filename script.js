@@ -185,27 +185,37 @@ let log = console.log;
 
 ////////////////////////////////// unit 15 //////////////////////////////
 
-function mutation(arr) {
-  let string = arr[0].toLowerCase();
-  let str = arr[1].toLowerCase();
-  let test = str.split('');
-  let count = 0;
-  for (let i = 0; i < test.length; i++) {
-    if (string.includes(test[i])) {
-      count++;
-    }
-  }
+// function mutation(arr) {
+//   let string = arr[0].toLowerCase();
+//   let str = arr[1].toLowerCase();
+//   let test = str.split('');
+//   let count = 0;
+//   for (let i = 0; i < test.length; i++) {
+//     if (string.includes(test[i])) {
+//       count++;
+//     }
+//   }
 
-  if (count == test.length) {
-    return true;
-  } else {
-    return false;
-  }
-}
+//   if (count == test.length) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
 
-log(mutation(["hello", "hey"]));
+// log(mutation(["hello", "hey"]));
 
 ////////////////////////////////// unit 16 //////////////////////////////
+
+function chunkArrayInGroups(arr, size) {
+  const newArr = [];
+  for (let i = 0; i < arr.length; i += size) {
+    newArr.push(arr.slice(i, i + size));
+  }
+  return newArr;
+}
+
+log(chunkArrayInGroups(["a", "b", "c", "d"], 2));
 
 ////////////////////////////////// unit 1 //////////////////////////////
 
